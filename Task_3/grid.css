@@ -1,0 +1,32 @@
+header {
+  font-size: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #b4b3b3;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item:hover {
+  background-color: #fa7272;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack items in a single column */
+  }
+}
