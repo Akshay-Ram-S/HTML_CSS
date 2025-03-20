@@ -1,0 +1,77 @@
+/* Basic Reset */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #333;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+
+.menu li:hover {
+  background-color: #555;
+}
+
+/* Dropdown Menu Styles */
+.submenu {
+  list-style-type: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #333;
+  min-width: 160px;
+}
+
+.submenu li {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu li:hover {
+  background-color: #555;
+}
+
+/* Show Submenu on Hover */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .submenu {
+    position: static;
+    display: none;
+  }
+
+  .dropdown:hover .submenu {
+    display: block;
+  }
+}
