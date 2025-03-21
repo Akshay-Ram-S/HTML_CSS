@@ -10,13 +10,13 @@
 /* Slide Container */
 .carousel-slides {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 /* Individual Slide */
 .slide {
   min-width: 100%;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 /* Styling for Images */
@@ -67,9 +67,10 @@ img {
   cursor: pointer;
   border-radius: 50%;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 1s;
 }
 
+/*Hover Action*/
 .nav-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
