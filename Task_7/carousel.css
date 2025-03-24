@@ -47,7 +47,8 @@ img {
 
 /* Apply the animation */
 .carousel-slides {
-  animation: slide-animation 10s infinite;
+  animation: slide-animation 1s;
+  animation-duration: 15s;
 }
 
 /* Navigation Button Styling */
@@ -68,6 +69,7 @@ img {
   border-radius: 50%;
   text-decoration: none;
   transition: background-color 1s;
+  transition-duration: 0ms;
 }
 
 /*Hover Action*/
