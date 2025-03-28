@@ -1,15 +1,15 @@
-Tabbed Content Interface
+## Tabbed Content Interface
 
 Objective : The purpose of this project is to create a tabbed content interface where clicking on a tab reveals different content sections. The interface uses hidden radio buttons (or checkboxes) along with labels that serve as tabs. When a tab is selected, the corresponding content is displayed, and the rest are hidden.
 
-Concepts revised:
+## Concepts revised:
 
 1. HTML Inputs
 2. CSS Margin and Padding
 3. CSS Transitions
 4. CSS Hover Pseudo-class
 
-Concepts learned:
+## Concepts learned:
 
 1. CSS Selectors: >,+,~
 
