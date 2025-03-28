@@ -1,17 +1,17 @@
-Pure CSS Carousel/Slider
+## Pure CSS Carousel/Slider
 
 Objective: to create an image carousel that cycles through slides automatically and allows for manual slide selection. This is done without any JavaScript and using CSS animations and pseudo-classes.
 
-Concepts revised:
+## Concepts revised:
 
 1. CSS Margin and Padding
 2. CSS Image attributes
 3. CSS Transitions
 4. CSS :hover Pseudo-class
 
-Concepts learned:
+## Concepts learned:
 
-1. CSS Animation:
+CSS Animation:
 
 CSS Keyframes: When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
 
