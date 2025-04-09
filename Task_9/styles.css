@@ -29,7 +29,7 @@ body {
   padding: 1rem;
   position: sticky;
   top: 50px;
-  height: calc(50vh - 50px);
+  height: calc(50vh - 60px);
 }
 
 .main {
