@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multi-page Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="page active">
+        <h1>Welcome to the Home Page</h1>
+        <br />
+        <div id="home-content">
+          <img src="home.jpg" alt="photo" />
+          <p id="home-paragraph">All your technology solutions at one stop</p>
+        </div>
+        <br />
+        <br />
+        <h1>Why us?</h1>
+        <br />
+        <p>
+          ✅ Trusted by hundreds <br />
+          ✅ Personalized support <br />
+          ✅ Results that speak for themselves
+        </p>
+      </section>
+
+      <section id="about" class="page">
+        <h1>About Us</h1>
+        <br />
+        <div id="about-content">
+          <p>
+            We are a technology solutions provider specializing in Web
+            Development, Artificial Intelligence, Machine Learning,
+            Cybersecurity and much more. We help businesses harness the power of
+            data, automation, and secure digital infrastructure to drive
+            innovation and growth. Our expert team delivers smart, scalable
+            solutions tailored to your unique challenges. We turn complex
+            technology into real-world results.
+          </p>
+          <br />
+          <ul>
+            <li>Founded : 2023</li>
+            <li>Employees : 50+</li>
+            <li>Revenue : 10 Cr</li>
+            <li>Headquarters : Bengaluru</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" class="page">
+        <h1>Services</h1>
+        <br />
+        <div id="service-content">
+          <p>The services we provide are mentioned below :</p>
+          <ul id="service-list">
+            <li>Website Development</li>
+            <li>Cloud Computing</li>
+            <li>Blockchain</li>
+            <li>Cyber Security</li>
+            <li>Artificial Intelligene</li>
+            <li>Machine Learning</li>
+            <li>DevOps</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="page">
+        <h1>Contact</h1>
+        <br />
+        <form action="/submit" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Your Phone Number"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Request Callback</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

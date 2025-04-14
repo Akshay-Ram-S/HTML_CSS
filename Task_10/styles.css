@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background: #a462c2;
+  padding: 1em;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px 20px;
+  transition: background 0.5s;
+}
+
+nav a:hover {
+  background: #ec70ec;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #ec70ec;
+  font-size: xx-large;
+}
+
+/* Page Container */
+main {
+  position: relative;
+  padding: 2em;
+}
+
+/* Page Sections */
+.page {
+  opacity: 0;
+  transform: translateY(20px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* Targeted Page Becomes Active */
+.page:target {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  cursor: default;
+  min-height: 60vh;
+}
+
+img {
+  width: 40%;
+  height: 25%;
+}
+
+#home-content {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+
+#home-paragraph {
+  text-align: center;
+  font-size: xx-large;
+  color: #ec70ec;
+  text-shadow: 1px 1px 1px #a80bf7;
+
+  margin-top: 12%;
+  margin-left: 2em;
+}
+
+#service-content {
+  font-size: large;
+}
+
+#service-list {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+li {
+  margin-top: 15px;
+}
+
+#about li {
+  margin-left: 1em;
+}
+
+#contact {
+  max-width: 400px;
+  margin: auto;
+  padding: 1em;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+#contact-us button {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .page {
+    padding: 15px;
+  }
+
+  #service-list {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    list-style-type: square;
+  }
+}
